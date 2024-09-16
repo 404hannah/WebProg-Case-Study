@@ -1,99 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home - Yale School of Arts</title>
-        <style>
-            /* PASTE YOUR CSS FILES UNDER THE COMMENT WITH YOUR NAME IN, THANKS*/
-            /* CSS of Hannah's part */
-            
-            /* CSS of Gabriel's part */
-            
-            /* CSS of Hannah's part */
-            
-            /* CSS of Princess' part */
-            
-            /* CSS of Stephen's part */
-            .news-section {
-            text-align: center;
-            padding: 20px;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Yale School of Arts</title>
+    <style>
+        /* body tag's css, feel free to edit this one */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #ffffff;
-            border: 1px solid #ddd;
-            margin: 20px auto;
-            width: 100%;
-            max-width: 1200px;
-            }
-            .news-title {
-            font-size: 2em;
-            margin-bottom: 20px;
-            }
-            .news-articles {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            }
-            .news-article {
-            flex: 1;
-            margin: 0 10px;
-            box-sizing: border-box;
-            max-width: calc(33.333% - 20px);
-            }
-            .news-image {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            }
-            .news-text {
-            margin-top: 10px;
-            font-size: 1em;
-            color: #333;
-            }
-            /* CSS of Shane's part */
-            
-        </style>
-    </head>
-    
-    <body>
-        <!-- Hannah's and/or Gabriel's part-->
-        <header>
-            
-        </header>
+        }
+        /* CSS of Hannah's part */
         
-        <!-- YOU COULD ADD MORE SECTIONS IF NEEDED -->
-        <section>
-            <!-- Here lies Hannah's part -->
-        </section>
-        <section>
-            <!-- Here lies Princess' part -->
-        </section>
-        <section>
-            <!-- Here lies Stephen's part -->
-            
-        </section>
-        <section class="news-section">
-            <h2 class="news-title">In The News</h2>
-            <div class="news-articles">
-                <article class="news-article">
-                    <img src="image1.jpg" alt="News Image 1" class="news-image">
-                    <p class="news-text">Description or summary of the first news item.</p>
-                </article>
+        /* CSS of Gabriel's part */
+        
+        /* CSS of Hannah's part */
+        
+        /* CSS of Princess' part */
+        
+        /* CSS of Stephen's part */
+        .news-section {
+    		position: relative;
+    		text-align: center;
+    		padding: 25px 50px;
+	    	margin: 30px auto;
+    		width: 100%;
+    		max-width: 100%;
+    		box-sizing: border-box;
+    		overflow: hidden;
+		}
+	    .news-section img.blurred-image {
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+    		width: 100%;
+    		height: 100%;
+    		object-fit: cover; 
+    		filter: blur(2px);
+    		filter: brightness(30%);
+    		z-index: -1; 
+		    }
+	    .news-title {
+    		font-size: 4em;
+		    font-family: Inria, serif;
+    		margin-bottom: 40px;
+    		position: relative;
+    		z-index: 1;
+    		color: #ffffff;
+		    }
+	    .news-articles {
+    		display: flex;
+    		padding-top: 10px;
+    		justify-content: space-between;
+    		flex-wrap: wrap;
+    		position: relative; 
+    		z-index: 1;
+    		gap: 20px;
+		    }
+	    .news-article {
+    		flex: 1;
+    		box-sizing: border-box;
+    		max-width: calc(33.333% - 20px);
+    		margin-bottom: 20px;
+		}
+	    .news-image {
+    		width: 250px;
+    		height: 250px;
+    		border-radius: 8px;
+    		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    		object-fit: cover;
+    		margin: 0 auto;
+		    }
+	    .news-text {
+    		margin-top: 10px;
+    		font-size: 1.8em;
+    		color: #85a9d1;
+		    }
+        
+        /* CSS of Shane's part */
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- Hannah's and/or Gabriel's part-->
+    </header>
+    
+
+    <!-- YOU COULD ADD MORE SECTIONS AND STUFF IF NEEDED -->
+
+
+    <section>
+        <!-- Here lies Hannah's part -->
+    </section>
+    
+    <section>
+        <!-- Here lies Princess' part -->
+    </section>
+    
+    <section>
+        <!-- Here lies Stephen's part -->
+        <!-- First part to be updated -->
+    </section>
+
+    <section class="news-section">
+    	<img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/school.jpg" alt="Background Image" class="blurred-image">
+    	<h2 class="news-title">In The News</h2>
+   	        <div class="news-articles">
                 
-                <article class="news-article">
-                    <img src="image2.jpg" alt="News Image 2" class="news-image">
-                    <p class="news-text">Description or summary of the second news item.</p>
-                </article>
-                
-                <article class="news-article">
-                    <img src="image3.jpg" alt="News Image 3" class="news-image">
-                    <p class="news-text">Description or summary of the third news item.</p>
-                </article>
-            </div>
-            </section>
+        	    <article class="news-article">
+            		<img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/yy_toolsofthetrade_1300x866.webp" alt="Image of a Woman Sewing a Fabric" class="news-image">
+            		<p class="news-text">--- From New Haven ---</p>
+            		<p style="font-size: 22px; color: #ffffff;"> A public monthly newsletter about news and events happening on campus.</p>
+        	    </article>
+        
+        	    <article class="news-article">
+            		<img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/photog.jpg" alt="A girl at an art Exhibit Pointing at a portrait" class="news-image">
+            		<p class="news-text">--- Week at SoA ---</p>
+           	 	    <p style="font-size: 22px; color: #ffffff;">A weekly community-only email listing SoA events as well as public and university events.</p>
+        	    </article>
+        
+       	 	    <article class="news-article">
+            		<img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/commu.jpg" alt="An empty office with chairs messy work desks" class="news-image">
+            		<p class="news-text">--- For the Community ---</p>
+            		<p style="font-size: 22px; color: #ffffff;">SoA is seeking a Gallery Exhibition Manager to oversee operations of our exhibition spaces.</p>
+        	    </article>
+    	    </div>
+        </section>
+    
         <section>
             <!-- Here lies Shane's part -->
         </section>
-    </body>
 
+    </body>
 </html>
