@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Yale School of Arts</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
     <style>
         /* body tag's css, feel free to edit this one */
         body {
@@ -13,7 +18,54 @@
             background-color: #ffffff;
         }
         /* CSS of Hannah's part */
-        
+		.menu{
+            display: flex;
+            flex-direction: row;
+
+            z-index: 2;
+            position: absolute;
+            top: 0px;
+
+            width: 100%;
+            height: 75px;
+            background-color: rgba(0, 0, 0, 0);
+
+            justify-content: end;
+            align-items: center;
+        }
+
+		.menu-search,
+        .menu-admissions,
+        .menu-exhibitions,
+        .menu-more{
+            font-family: Open Sans;
+            font-size: large;
+            font-weight: bold;
+            color: rgb(15, 77, 146);
+        }
+
+        .menu-search,
+        .menu-admissions,
+        .menu-exhibitions{
+                margin-right: 30px;
+        }
+
+        .menu-search{
+            padding-top: 5px;
+        }
+
+        .menu-more{
+            margin-right: 50px;
+        }
+
+        .title-background{
+            z-index: 1;
+            position: absolute;
+            top: 0px;
+
+            width: 100%;
+        }
+
         /* CSS of Gabriel's part */
         
         /* CSS of Hannah's part */
@@ -169,6 +221,19 @@
 
     <header>
         <!-- Hannah's and/or Gabriel's part-->
+		<div class="menu-name-about">
+            <div class="menu">
+                <div class="menu-search">
+                    <img src="Magnifying glass.png" alt="Magnifying glass" width="25px"></img>
+                </div>
+                <div class="menu-admissions">Admissions</div>
+                <div class="menu-exhibitions">Exhibitions</div>
+                <div class="menu-more">More</div>
+            </div>
+
+            <img class="title-background" src="Background Image 1.png" alt="Yale School of Art Green Hall"></img>
+        </div>
+
     </header>
     
 
