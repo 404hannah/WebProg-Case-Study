@@ -21,6 +21,87 @@
         /* CSS of Princess' part */
         
         /* CSS of Stephen's part */
+	/* 1st Part */
+	.calendar-section {
+            text-align: center;
+            padding: 20px;
+        }
+        .calendar-section h2 {
+            font-size: 3.2vw;
+            margin-bottom: 20px;
+            font-weight: bold;
+	    padding-bottom: 20px;
+        }
+        .event-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+	    padding-bottom: 20px;	
+        }
+        .event-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .event-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .date {
+            background-color: #1a73e8;
+    	    color: white;
+    	    padding: 5px;
+            font-size: 20px;
+    	    font-weight: bold;
+    	    text-align: center;
+    	    width: 50%;
+            margin: -20px auto 0 auto;
+    	    border-radius: 5px;
+    	    position: relative;
+     	    z-index: 1;
+	    left: -15%
+        }
+	.date:hover {
+	    background-color: #155a9f;
+	}
+	.no-underline {
+	    text-decoration: none;
+	}
+        .event-info {
+            padding: 15px;
+	    padding-top: 0px;
+        }
+        .event-info h3 {
+            font-size: 18px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        .event-info p {
+            font-size: 14px;
+            color: #555;
+	    line-height: 1.3;
+        }
+	.button {
+    	    background-color: #1a73e8; /* Blue color */
+    	    color: white;
+    	    padding: 10px 20px;
+    	    border: none;
+    	    border-radius: 5px; /* Rounded corners */
+            font-size: 20px;
+    	    cursor: pointer;
+    	    margin-top: 20px;
+    	    transition: background-color 0.3s;
+  	    width: 250px;
+	}
+	.button:hover {
+    	    background-color: #155a9f; /* Darker blue when hovered */
+	}
+	    /* 2nd Part*/
         .news-section {
     		position: relative;
     		text-align: center;
@@ -31,7 +112,7 @@
     		box-sizing: border-box;
     		overflow: hidden;
 		}
-	    .news-section img.blurred-image {
+	.news-section img.blurred-image {
     		position: absolute;
     		top: 0;
     		left: 0;
@@ -42,7 +123,7 @@
     		filter: brightness(30%);
     		z-index: -1; 
 		    }
-	    .news-title {
+	.news-title {
     		font-size: 4em;
 		    font-family: Inria, serif;
     		margin-bottom: 40px;
@@ -50,7 +131,7 @@
     		z-index: 1;
     		color: #ffffff;
 		    }
-	    .news-articles {
+	.news-articles {
     		display: flex;
     		padding-top: 10px;
     		justify-content: space-between;
@@ -59,13 +140,13 @@
     		z-index: 1;
     		gap: 20px;
 		    }
-	    .news-article {
+	.news-article {
     		flex: 1;
     		box-sizing: border-box;
     		max-width: calc(33.333% - 20px);
     		margin-bottom: 20px;
 		}
-	    .news-image {
+	.news-image {
     		width: 250px;
     		height: 250px;
     		border-radius: 8px;
@@ -73,7 +154,7 @@
     		object-fit: cover;
     		margin: 0 auto;
 		    }
-	    .news-text {
+	.news-text {
     		margin-top: 10px;
     		font-size: 1.8em;
     		color: #85a9d1;
@@ -104,9 +185,51 @@
     
     <section>
         <!-- Here lies Stephen's part -->
-        <!-- First part to be updated -->
+        <!-- First part, Still to be updated -->
+	<div class="calendar-section">
+    	    <h2>ON THE CALENDAR</h2>
+    	    <div class="event-cards">
+        	<div class="event-card">
+            	    <img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/yy_toolsofthetrade_1300x866.webp" alt="A picture of a woman sewing a fabric">
+             	    <a href="https://www.art.yale.edu/public-events" target="_blank" class="no-underline"><div class="date">SEPT 09</div></a>
+            	    <div class="event-info">
+                	<h3>YALE TEXTILE WORKING GROUP</h3>
+                	<p>Hosted by Kathleen Quaint, History of Art PhD Student</p>
+                	<p>5-7 PM<br>Loria Center</p>
+            	    </div>
+       	 	</div>
+                <div class="event-card">
+            	    <img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/library.webp" alt="An image of Yale Library's lobby">
+            	    <a href="https://www.art.yale.edu/public-events" target="_blank" class="no-underline"><div class="date">SEPT 10</div></a>
+            	    <div class="event-info">
+                	<h3>LIBRARY POP-UP EXHIBITION</h3>
+                	<p>An arts librarian will be onsite to answer your questions and showcase new library materials.</p>
+                	<p>11:30 AM - 1 PM<br>353 Crown Street Lobby</p>
+            	    </div>
+        	</div>
+        	<div class="event-card">
+            	    <img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/painting.webp" alt="A picture of three people talking, surrounded by paintings">
+            	    <a href="https://www.art.yale.edu/public-events" target="_blank" class="no-underline"><div class="date">SEPT 11</div></a>
+            	    <div class="event-info">
+                	<h3>PRESENTATION OF MFA CRIT WORK</h3>
+                	<p>Hosted by Diego León and Zak Nguyen</p>
+                	<p>1-3 PM & 7-9 PM<br>353 Crown Street, the Pit</p>
+            	    </div>
+        	</div>
+        	<div class="event-card">
+            	    <img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/painting.jpg" alt="A picture of paintings">
+            	    <a href="https://www.art.yale.edu/public-events" target="_blank" class="no-underline"><div class="date">SEPT 12</div></a>
+            	    <div class="event-info">
+                	<h3>MFA CRITS IN PHOTOGRAPHY</h3>
+                	<p>Hosted by Christopher Post, Emily Wall, and Luis Manuel Diaz</p>
+                	<p>3-5 PM<br>Chapel Street, New Haven</p>
+            	    </div>
+	        </div>
+            </div>
+            <a href="https://www.art.yale.edu/public-events" target="_blank" class="no-underline"><button id="calendar" class="button">SEE MORE</button></a>
+        </div>
     </section>
-
+    <!-- THIS PART ALSO NEEDS PLENTY OF ADJUSTMENT-->
     <section class="news-section">
     	<img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/school.jpg" alt="Background Image" class="blurred-image">
     	<h2 class="news-title">In The News</h2>
