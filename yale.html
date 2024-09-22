@@ -72,48 +72,49 @@
         
         /* CSS of Princess' part */
 		
-		.Exhibition-1, .Exhibition-2, .Exhibition-3{
+	.Exhibition-1, .Exhibition-2, .Exhibition-3{
 			
 			display: grid;
-  grid-template-columns: auto;
-  
-  
-	
-			
+  			grid-template-columns: auto;
+ 	
 		
 		}
-		.SPREAD, .Hourglass, .DOOM {
+		.SPREAD,.DOOM {
   display: flex;
+  width: 80%;
+  text-align: left;
+}
+.Hourglass{
+	display: flex;
+  width: 80%;
+  text-align: right;
 }
 
 .SPREAD iframe, .Hourglass iframe, .DOOM iframe {
   object-fit: cover;
   width: 50%;
-  height: 50%;
+  height: 500px;
 }
+
     /* Exhibition 1 styles */
 	.Exhibition-1 {
 		
 		background: #0F4D92;
 }
 .Exhibition-1 h1 {
-	width: 54.0625rem;
-height: 6rem;
-flex-shrink: 0;
+	
 
 color: #000;
 text-align:left;
 font-family: "Alegreya Sans SC";
-font-size: 6rem;
+font-size: 3rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
 text-transform: uppercase;
 }
 .Exhibition-1 p {
-	width: 29.5625rem;
-height: 1.75rem;
-flex-shrink: 0;
+	
 
 color: #000;
 text-align:left;
@@ -125,67 +126,7 @@ line-height: normal;
 text-transform: uppercase;
 }
 .Exhibition-1 h2 {
-	width: 29.5625rem;
-height: 3rem;
-flex-shrink: 0;
-
-color: #000;
-text-align:left;
-font-family: "Alegreya Sans";
-font-size: 2.5rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: uppercase;
-}
-
-.SPREAD {
-  margin: 20px;
-}
-
-.SPREAD iframe {
-	float: right;
-}
-
-
-/* Exhibition 2 styles */
-
-.Exhibition-2 {
-		background-color: #ffe515; 
-}
-.Exhibition-2 h2 {
-	width: 29.4375rem;
-height: 3rem;
-flex-shrink: 0;
-
-color: #FFF;
-text-align: right;
-font-family: "Alegreya Sans";
-font-size: 2rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: uppercase;
-}
-
-.Hourglass {
-  margin: 20px;
-}
-
-.Hourglass iframe {
-	float: left;
-}
-
-
-/* Exhibition 3 styles */
-
-.Exhibition-3 {
-	background: #ED2D23;
-}
-.Exhibition-3 h2 {
-	width: 29.5625rem;
-height: 3rem;
-flex-shrink: 0;
+	
 
 color: #000;
 text-align: left;
@@ -198,15 +139,78 @@ text-transform: uppercase;
 margin-bottom: 20px;
 }
 
-.DOOM {
-  margin: 20px;
+
+.SPREAD iframe {
+	float: right;
 }
+.Rectangle-SPREAD{
+	width: 34.375rem;
+height: 64rem;
+flex-shrink: 1;
+background: #FFF;
+}
+
+/* Exhibition 2 styles */
+
+.Exhibition-2 {
+		background-color: #ffe515; 
+}
+.Exhibition-2 h2 {
+	
+
+color: #FFF;
+text-align: right;
+font-family: "Alegreya Sans";
+font-size: 2rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+}
+
+
+
+.Hourglass iframe {
+	float: left;
+}
+.Rectangle-Hourglass{
+	width: 34.375rem;
+height: 64rem;
+flex-shrink: 1;
+float: left;
+background: #000000;
+}
+
+/* Exhibition 3 styles */
+
+.Exhibition-3 {
+	background: #ED2D23;
+}
+.Exhibition-3 h2 {
+	
+
+color: #000;
+text-align: left;
+font-family: "Alegreya Sans";
+font-size: 2.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+
 
 .DOOM iframe {
 	float: right;
 }
-
-
+.Rectangle-DOOM{
+	width: 34.375rem;
+height: 64rem;
+flex-shrink: 1;
+background: #FFF;
+}
 
         
         /* CSS of Stephen's part */
@@ -403,12 +407,13 @@ margin-bottom: 20px;
         <!-- Here lies Princess' part --> 
 	
 		<div class="Exhibition-1">
+			<div class = "Rectangle-SPREAD">
 			<h1>VIRTUAL EXHIBITION</h1>
 		  	<h1>WALK-THROUGH</h1>
 		  	<p>YALE SCHOOL OF ART PRESENTS THE WORK OF</p>
 				<p>OUR MFA CANDIDATES.</p>
 		  	<h2>2024 GRAPHIC DESIGN MFA THESIS EXHIBITION</h2> 
-				
+			</div>		
 				<div class="SPREAD">
 					<iframe src ="https://my.matterport.com/show/?m=eMoimCBUCp3" title = ""></iframe>
 				</div>
@@ -416,8 +421,9 @@ margin-bottom: 20px;
 	 	</div>
 	
 	  <div class="Exhibition-2">
+		<div class = "Rectangle-Hourglass">
 			<h2>2024 PHOTOGRAPHY MFA THESIS EXHIBITION</h2>
-			
+		</div>
 				<div class="Hourglass">
 					<iframe src ="https://my.matterport.com/show/?m=xyte9kssoKZ" title = ""></iframe>
 
@@ -425,11 +431,11 @@ margin-bottom: 20px;
 	 	</div>
 	
 	  <div class="Exhibition-3">
+		<div class = "Rectangle-DOOM">
 			<h2>2024 SCULPTURE MFA THESIS EXHIBITION</h2>
-		
+		</div>
 				<div class="DOOM">
 					<iframe src ="https://my.matterport.com/show/?m=bijcaioLaSd" title = ""></iframe>
-					
 				</div>
 	  </div>
 		 
