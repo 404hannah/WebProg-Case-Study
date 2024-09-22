@@ -195,27 +195,24 @@
         /* CSS of Princess' part */
 		
 	.Exhibition-1, .Exhibition-2, .Exhibition-3{
-			
-			display: grid;
-  			grid-template-columns: auto;
+        display: grid;
+  
+  grid-gap: 20px;
+        
+        display: flex;
+        
  	
-		
 		}
-		.SPREAD,.DOOM {
-  display: flex;
-  width: 80%;
-  text-align: left;
-}
-.Hourglass{
-	display: flex;
-  width: 80%;
-  text-align: right;
-}
+		.SPREAD,.Hourglass, .DOOM {
+            display: flex;
 
+}
 .SPREAD iframe, .Hourglass iframe, .DOOM iframe {
-  object-fit: cover;
-  width: 50%;
-  height: 500px;
+  object-fit:cover;
+  
+  width: 55.625rem;
+  height: 63rem;
+  
 }
 
     /* Exhibition 1 styles */
@@ -229,11 +226,7 @@
 color: #000;
 text-align:left;
 font-family: "Alegreya Sans SC";
-font-size: 3rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: uppercase;
+
 }
 .Exhibition-1 p {
 	
@@ -241,11 +234,7 @@ text-transform: uppercase;
 color: #000;
 text-align:left;
 font-family: "Alegreya Sans SC";
-font-size: 1.5rem;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
-text-transform: uppercase;
+
 }
 .Exhibition-1 h2 {
 	
@@ -253,12 +242,7 @@ text-transform: uppercase;
 color: #000;
 text-align: left;
 font-family: "Alegreya Sans";
-font-size: 2.5rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: uppercase;
-margin-bottom: 20px;
+
 }
 
 
@@ -283,11 +267,7 @@ background: #FFF;
 color: #FFF;
 text-align: right;
 font-family: "Alegreya Sans";
-font-size: 2rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: uppercase;
+
 }
 
 
@@ -298,8 +278,7 @@ text-transform: uppercase;
 .Rectangle-Hourglass{
 	width: 34.375rem;
 height: 64rem;
-flex-shrink: 1;
-float: left;
+float: right;
 background: #000000;
 }
 
@@ -314,24 +293,21 @@ background: #000000;
 color: #000;
 text-align: left;
 font-family: "Alegreya Sans";
-font-size: 2.5rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: uppercase;
-margin-bottom: 20px;
+
 }
 
 
 
 .DOOM iframe {
 	float: right;
+    
 }
 .Rectangle-DOOM{
 	width: 34.375rem;
 height: 64rem;
-flex-shrink: 1;
 background: #FFF;
+
+
 }
 
         
