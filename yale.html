@@ -71,44 +71,68 @@
         /* CSS of Hannah's part */
         
         /* CSS of Princess' part */
+		
+		.Exhibition-1, .Exhibition-2, .Exhibition-3{
+			
+			display: grid;
+  grid-template-columns: auto;
+  
+  
+	
+			
+		
+		}
+		.SPREAD, .Hourglass, .DOOM {
+  display: flex;
+}
+
+.SPREAD iframe, .Hourglass iframe, .DOOM iframe {
+  object-fit: cover;
+  width: 50%;
+  height: 50%;
+}
     /* Exhibition 1 styles */
 	.Exhibition-1 {
-		width: 100%;
 		
 		background: #0F4D92;
 }
 .Exhibition-1 h1 {
-	width: 865px;
-height: 96px;
+	width: 54.0625rem;
+height: 6rem;
 flex-shrink: 0;
+
 color: #000;
+text-align:left;
 font-family: "Alegreya Sans SC";
-font-size: 96px;
+font-size: 6rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
 text-transform: uppercase;
 }
 .Exhibition-1 p {
-	width: 473px;
-height: 28px;
+	width: 29.5625rem;
+height: 1.75rem;
 flex-shrink: 0;
+
 color: #000;
+text-align:left;
 font-family: "Alegreya Sans SC";
-font-size: 24px;
+font-size: 1.5rem;
 font-style: normal;
 font-weight: 300;
 line-height: normal;
 text-transform: uppercase;
 }
 .Exhibition-1 h2 {
-	width: 473px;
-height: 48px;
+	width: 29.5625rem;
+height: 3rem;
 flex-shrink: 0;
+
 color: #000;
-text-align: center;
+text-align:left;
 font-family: "Alegreya Sans";
-font-size: 40px;
+font-size: 2.5rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -119,36 +143,25 @@ text-transform: uppercase;
   margin: 20px;
 }
 
-.SPREAD img {
-  width: 100%;
-  height: auto;
-  border: none;
-  border-radius: 10px; 
+.SPREAD iframe {
+	float: right;
 }
 
-.SPREAD a {
-  text-decoration: none;
-  color: #337ab7; 
-}
 
-.SPREAD a:hover {
-  color: #23527c; 
-}
 /* Exhibition 2 styles */
 
 .Exhibition-2 {
-	width: 100%;
 		background-color: #ffe515; 
 }
 .Exhibition-2 h2 {
-	width: 471px;
-height: 48px;
+	width: 29.4375rem;
+height: 3rem;
 flex-shrink: 0;
 
 color: #FFF;
-text-align: center;
+text-align: right;
 font-family: "Alegreya Sans";
-font-size: 40px;
+font-size: 2rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -159,60 +172,40 @@ text-transform: uppercase;
   margin: 20px;
 }
 
-.Hourglass img {
-  width: 100%;
-  height: auto;
-  border: none;
-  border-radius: 10px; 
+.Hourglass iframe {
+	float: left;
 }
 
-.Hourglass a {
-  text-decoration: none;
-  color: #337ab7; 
-}
 
-.Hourglass a:hover {
-  color: #23527c; 
-}
 /* Exhibition 3 styles */
 
 .Exhibition-3 {
-	width: 100%;
 	background: #ED2D23;
 }
 .Exhibition-3 h2 {
-	width: 473px;
-height: 48px;
+	width: 29.5625rem;
+height: 3rem;
 flex-shrink: 0;
+
 color: #000;
-text-align: center;
+text-align: left;
 font-family: "Alegreya Sans";
-font-size: 40px;
+font-size: 2.5rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 text-transform: uppercase;
+margin-bottom: 20px;
 }
 
 .DOOM {
   margin: 20px;
 }
 
-.DOOM img {
-  width: 100%;
-  height: auto;
-  border: none;
-  border-radius: 10px; 
+.DOOM iframe {
+	float: right;
 }
 
-.DOOM a {
-  text-decoration: none;
-  color: #337ab7; 
-}
-
-.DOOM a:hover {
-  color: #23527c; 
-}
 
 
         
@@ -408,41 +401,39 @@ text-transform: uppercase;
     
     <section>
         <!-- Here lies Princess' part --> 
+	
 		<div class="Exhibition-1">
 			<h1>VIRTUAL EXHIBITION</h1>
 		  	<h1>WALK-THROUGH</h1>
-		  	<p>YALE SCHOOL OF ART PRESENTS THE WORK OF OUR MFA CANDIDATES.</p>
-		  	<h2>2024 GRAPHIC DESIGN MFA THESIS EXHIBITION</h2>
+		  	<p>YALE SCHOOL OF ART PRESENTS THE WORK OF</p>
+				<p>OUR MFA CANDIDATES.</p>
+		  	<h2>2024 GRAPHIC DESIGN MFA THESIS EXHIBITION</h2> 
+				
 				<div class="SPREAD">
-		  			<a href="https://my.matterport.com/show/?m=eMoimCBUCp3" target ="_blank">
-					<img src = "Exhibition (Cess)/SPREAD.gif" alt = "2024 Graphic Design MFA Thesis Exhibition-SPREAD">
-					</a>
+					<iframe src ="https://my.matterport.com/show/?m=eMoimCBUCp3" title = ""></iframe>
 				</div>
 	
 	 	</div>
-	</section>
-	<section>
+	
 	  <div class="Exhibition-2">
-			<h2>2024 Photography MFA Thesis Exhibition</h2>
+			<h2>2024 PHOTOGRAPHY MFA THESIS EXHIBITION</h2>
+			
 				<div class="Hourglass">
-					<a href="https://my.matterport.com/show/?m=xyte9kssoKZ" target ="_blank">
-					<img src = "Exhibition (Cess)/Hourglass.jpg" alt = "2024 Photography MFA Thesis Exhibition-Hourglass">
-					</a>
+					<iframe src ="https://my.matterport.com/show/?m=xyte9kssoKZ" title = ""></iframe>
 
 				</div>
 	 	</div>
-	</section>
-	<section>
+	
 	  <div class="Exhibition-3">
-			<h2>2024 Sculpture MFA Thesis Exhibition</h2>
+			<h2>2024 SCULPTURE MFA THESIS EXHIBITION</h2>
+		
 				<div class="DOOM">
-					<a href="https://my.matterport.com/show/?m=bijcaioLaSd" target ="_blank">
-					<img src = "Exhibition (Cess)/DOOM.jpg" alt = "2024 Sculpture MFA Thesis Exhibition-DOOM">
-					</a>
+					<iframe src ="https://my.matterport.com/show/?m=bijcaioLaSd" title = ""></iframe>
+					
 				</div>
 	  </div>
 		 
-
+	
     </section>
     
     <section>
