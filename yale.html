@@ -18,58 +18,180 @@
             background-color: #ffffff;
         }
         /* CSS of Hannah's part */
-		.menu{
-            display: flex;
-            flex-direction: row;
-
-            z-index: 2;
-            position: absolute;
-            top: 0px;
-
-            width: 100%;
-            height: 75px;
-            background-color: rgba(0, 0, 0, 0);
-
-            justify-content: end;
-            align-items: center;
+		.menu-name-about{
+                background-image: url("Hannah/Background Image 1.png");
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                height: 200vh;
         }
 
-		.menu-search,
-        .menu-admissions,
-        .menu-exhibitions,
-        .menu-more{
-            font-family: Open Sans;
-            font-size: large;
-            font-weight: bold;
-            color: rgb(15, 77, 146);
+        .menu{
+            display: flex;
+			flex-direction: row;
+
+			position: relative;
+			z-index: 2;
+
+			width: 100%;
+			height: 75px;
+			background-color: rgba(0, 0, 0, 0);
+
+			justify-content: end;
+			align-items: center;       
         }
 
         .menu-search,
         .menu-admissions,
-        .menu-exhibitions{
-                margin-right: 30px;
-        }
-
-        .menu-search{
-            padding-top: 5px;
-        }
-
+        .menu-exhibitions,
         .menu-more{
+            font-family: Open Sans;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(15, 77, 146);
+        }
+
+		.menu-search,
+        .menu-admissions,
+        .menu-exhibitions{
+            margin-right: 30px;
+        }            
+
+		.menu-search{
+            padding-top: 5px;
+        }           
+
+		.menu-more{
             margin-right: 50px;
-        }
-
-        .title-background{
-            z-index: 1;
-            position: absolute;
-            top: 0px;
-
-            width: 100%;
-        }
+        }           
 
         /* CSS of Gabriel's part */
         
         /* CSS of Hannah's part */
-        
+		.admissions-and-programs{
+			display: flex;
+            flex-direction: row;
+
+            justify-content: space-between;
+            align-items: center;
+
+            background-color: rgb(15, 77, 146);
+            position: relative;
+        }
+
+        .photography,
+        .sculpture,
+        .admissions,
+        .graphic-design,
+        .painting-printmaking{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 100vh;
+
+            background-size: cover;
+            background-position: center;
+
+            text-align: center;
+			display: flex;
+            align-items: center;
+        }
+
+        .photography,
+        .sculpture,
+        .admissions,
+        .graphic-design{
+            flex-direction: column;
+			justify-content: center;
+        }
+
+        .painting-printmaking{
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .photography,
+        .sculpture,
+        .graphic-design,
+        .painting-printmaking{
+            flex: 1;
+        }
+           
+        .admissions{
+            flex: 1.25;
+            background-image: url("Hannah/Admissions.png");
+        }
+
+        .photography{
+            margin-left: 10px;
+            margin-right: 5px;
+            background-image: url("Hannah/Photography.png");
+        }
+
+        .sculpture,
+        .admissions,
+        .graphic-design{
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .painting-printmaking{
+            margin-left: 5px;
+            margin-right: 10px;
+            background-image: url("Hannah/Painting and Printmaking.png");
+        }
+
+        .sculpture{
+            background-image: url("Hannah/Sculpture.png");
+        }
+
+        .graphic-design{
+            background-image: url("Hannah/Graphic Design.png");
+        }
+
+        .txt-photography,
+        .txt-sculpture,
+        .txt-admissions,
+        .txt-graphic-design,
+        .txt-painting,
+        .txt-printmaking{
+            font-family: Open Sans;
+            font-size: 35px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.7);
+                
+            z-index: 2;
+            position: relative;
+        }
+
+        .txt-painting,
+        .txt-printmaking{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .txt-admissions{
+            letter-spacing: 3px;
+        }
+
+        .apply{
+            z-index: 2;
+            position: relative;
+
+            width: 175px;
+            height: 40px;
+            background-color: rgb(15, 77, 146);
+            border-radius: 25px;
+
+        	font-family: Open Sans;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+
+            padding-top: 5px;
+            margin-top: 10px;
+        }
+
         /* CSS of Princess' part */
 		
 	.Exhibition-1, .Exhibition-2, .Exhibition-3{
@@ -390,9 +512,8 @@ background: #FFF;
                 <div class="menu-more">More</div>
             </div>
 
-            <img class="title-background" src="Hannah/Background Image 1.png" alt="Yale School of Art Green Hall"></img>
+            
         </div>
-
     </header>
     
 
@@ -401,6 +522,29 @@ background: #FFF;
 
     <section>
         <!-- Here lies Hannah's part -->
+        <div class="admissions-and-programs">
+            <div class="photography">
+                <div class="txt-photography">P<br>H<br>O<br>T<br>O<br>G<br>R<br>A<br>P<br>H<br>Y</div>
+            </div>
+
+            <div class="sculpture">
+                <div class="txt-sculpture">S<br>C<br>U<br>L<br>P<br>T<br>U<br>R<br>E</div>
+            </div>
+
+            <div class="admissions">
+                <div class="txt-admissions">ADMISSIONS</div>
+                <div class="apply">Apply</div>
+            </div>
+
+            <div class="graphic-design">
+                <div class="txt-graphic-design">G<br>R<br>A<br>P<br>H<br>I<br>C<br><br>D<br>E<br>S<br>I<br>G<br>N</div>
+            </div>
+
+            <div class="painting-printmaking">
+                <div class="txt-painting">P<br>A<br>I<br>N<br>T<br>I<br>N<br>G<br><br>A<br>N<br>D</div>
+                <div class="txt-printmaking">P<br>R<br>I<br>N<br>T<br>M<br>A<br>K<br>I<br>N<br>G</div>
+            </div>
+        </div>
     </section>
     
     <section>
