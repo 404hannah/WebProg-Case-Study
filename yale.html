@@ -296,6 +296,24 @@
 		    }
         
         /* CSS of Shane's part */
+		.social-media img{
+			width:700px;
+			height:700px;
+		}
+		.social-media-content{
+			display: flex;
+    		justify-content: flex-end;
+    		gap: 50px;
+		}
+		.social-media-content img{
+			width:50px; 
+			height:50px;
+			margin:0 auto;
+			transition: transform 0.3s ease;
+		}
+		.social-media-content img:hover{
+			transform: scale(1.2);
+		}
         
     </style>
 </head>
@@ -440,7 +458,23 @@
     
         <section>
             <!-- Here lies Shane's part -->
+			 <!--Socmed v0.1-->
+			 <div class="social-media">
+				<img src="shinmark/art-collage.png" alt="collage">
+				<div class="social-media-content">
+					<h2>Follow Us</h2>
+					<a href="https://www.instagram.com/yaleschoolofart/" target="_blank">
+						<img src="shinmark/insta-logo.png" alt="Instagram"></a>
+					<a href="https://www.facebook.com/YaleSchoolofArt/" target="_blank">
+						<img src="shinmark/fb-icon.png" alt="Facebook"></a>
+					<a href="https://www.youtube.com/channel/UCDwJT0mYodTSodcpH-hGmdA" target="_blank">
+						<img src="shinmark/yt-icon.png" alt="YouTube"></a>
+				</div>
+			 </div>
         </section>
+		<section>
+			<!--Bottom Links on creation-->
+		</section>
 
     </body>
 </html>
