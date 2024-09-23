@@ -193,27 +193,30 @@
         }
 
         /* CSS of Princess' part */
-		
-	.Exhibition-1, .Exhibition-2, .Exhibition-3{
-    
-        display: grid;
-  
-  grid-gap: 20px;
-        
-        display: flex;
-        
- 	
+		.Exhibition{
+            width: auto;
+            height: auto;
+           
+            
+        }
+	    .Exhibition-1, .Exhibition-2, .Exhibition-3{
+            display: grid;
+            grid-gap: 20px;
+            display: flex;
+
 		}
 		.SPREAD,.Hourglass, .DOOM {
             display: flex;
+            
 
 }
-.SPREAD iframe, .Hourglass iframe, .DOOM iframe {
-  object-fit:cover;
-  margin-left: auto;
-  margin-right: auto;
-  width: 55.625rem;
-  height: 63rem;
+        .SPREAD iframe, .Hourglass iframe, .DOOM iframe {
+           
+            object-fit:cover;
+             margin-left: auto;
+             margin-right: auto;
+            width: 55.625rem;
+            height: auto;
   
 }
 
@@ -221,15 +224,17 @@
 	.Exhibition-1 {
 		
 		background: #0F4D92;
+       
 }
 .Exhibition-1 h1 {
 	
 
 
 color: #000;
-text-align:left;
+text-align:center;
+float:left;
 font-family: "Alegreya Sans SC";
-font-size: 5rem;
+font-size: 3rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -242,6 +247,7 @@ text-transform: uppercase;
 
 color: #000;
 text-align:center;
+float:left;
 font-family: "Alegreya Sans SC";
 font-size: 1.5rem;
 font-style: normal;
@@ -265,19 +271,22 @@ text-transform: uppercase;
 
 
 .SPREAD iframe {
-	float: right;
+	float: inline-end;
 }
 .Rectangle-SPREAD{
-width: 34.375rem;
-height: 64rem;
-flex-shrink: 1;
-background: #FFF;
+            width: auto;
+            height: 64rem;
+            background: #FFF;
+            display: block;
+  justify-content: left;
+  align-items: center;
 }
+
 
 /* Exhibition 2 styles */
 
 .Exhibition-2 {
-		background-color: #ffe515; 
+		background-color: #ffe515;           
 }
 .Exhibition-2 h2 {
 	
@@ -295,22 +304,28 @@ text-transform: uppercase;
 
 
 .Hourglass iframe {
-	float: left;
+	float: inline-start;
 }
 .Rectangle-Hourglass{
-	width: 34.375rem;
-height: 64rem;
-float: right;
-background: #000000;
+	        width: auto;
+            height: 64rem;
+            background: #000000;
+            display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 /* Exhibition 3 styles */
 
 .Exhibition-3 {
 	background: #ED2D23;
+    
+            
 }
 .Exhibition-3 h2 {
-	
+	display: flex;
+  justify-content: left;
+  align-items: center;
 
 color: #000;
 text-align: center;
@@ -325,16 +340,19 @@ text-transform: uppercase;
 
 
 .DOOM iframe {
-	float: right;
+	float: inline-end;
     
 }
 .Rectangle-DOOM{
-	width: 34.375rem;
-height: 64rem;
-background: #FFF;
-
-
+            width: auto;
+            height: 64rem;
+            background: #FFF;
+            display: flex;
+  justify-content: left;
+  align-items: center;
 }
+
+
 
         
         /* CSS of Stephen's part */
@@ -551,11 +569,11 @@ background: #FFF;
     
     <section>
         <!-- Here lies Princess' part --> 
-	
+	    <div class = Exhibition>
 		<div class="Exhibition-1">
 			<div class = "Rectangle-SPREAD">
-			<h1>VIRTUAL EXHIBITION WALK-THROUGH</h1>
-		  	<p>YALE SCHOOL OF ART PRESENTS THE WORK OF OUR MFA CANDIDATES.</p>
+			<h1>VIRTUAL EXHIBITION WALK-THROUGH</h1> <br>
+		  	<p>YALE SCHOOL OF ART PRESENTS THE WORK OF OUR MFA CANDIDATES.</p><br>
 		  	<h2>2024 GRAPHIC DESIGN MFA THESIS EXHIBITION</h2> 
 			</div>		
 				<div class="SPREAD">
@@ -566,7 +584,8 @@ background: #FFF;
 	
 	  <div class="Exhibition-2">
 		<div class = "Rectangle-Hourglass">
-			<h2>2024 PHOTOGRAPHY MFA THESIS EXHIBITION</h2>
+			<h2>2024 PHOTOGRAPHY MFA THESIS EXHIBITION</h2> 
+            
 		</div>
 				<div class="Hourglass">
 					<iframe src ="https://my.matterport.com/show/?m=xyte9kssoKZ" title = ""></iframe>
@@ -583,7 +602,7 @@ background: #FFF;
 				</div>
 	  </div>
 		 
-	
+	</div>
     </section>
     
     <section>
