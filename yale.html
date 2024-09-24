@@ -19,11 +19,11 @@
         }
         /* CSS of Hannah's part */
 		.menu-name-about{
-                background-image: url("Hannah/Background Image 1.png");
-                background-size: cover;
-                background-position: center;
-                position: relative;
-                height: 200vh;
+            background-image: url("Hannah/Background Image 1.png");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            height: 200vh;
         }
 
         .menu{
@@ -49,6 +49,8 @@
             font-size: 20px;
             font-weight: bold;
             color: rgb(15, 77, 146);
+
+            transition-property: opacity;
         }
 
 		.menu-search,
@@ -59,11 +61,41 @@
 
 		.menu-search{
             padding-top: 5px;
+
+            transition-property: transform;
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
         }           
 
 		.menu-more{
             margin-right: 50px;
         }           
+
+        .menu-admissions,
+        .menu-exhibitions,
+        .menu-more{
+            transition-property: font-size;
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
+        }
+
+        .menu-search:hover{
+            transform: scale(1.5);
+        }
+
+        .menu-admissions:hover,
+        .menu-exhibitions:hover,
+        .menu-more:hover{
+            font-size: xx-large;
+            cursor: default;
+        }
+
+        .menu-search:active,
+        .menu-admissions:active,
+        .menu-exhibitions:active,
+        .menu-more:active{
+            opacity: 0.75;
+        }
 
         /* CSS of Gabriel's part */
         
@@ -94,6 +126,12 @@
             text-align: center;
 			display: flex;
             align-items: center;
+
+            transition-property: opacity;
+            transition-property: flex;
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
+
         }
 
         .photography,
@@ -190,7 +228,32 @@
 
             padding-top: 5px;
             margin-top: 10px;
+
+            transition-property: background-color;
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
         }
+
+        .apply:hover{
+            background-color: rgb(23, 112, 212);
+        }
+
+        .photography:hover,
+        .sculpture:hover,
+        .admissions:hover,
+        .graphic-design:hover,
+        .painting-printmaking:hover{
+            flex: 2;
+        }
+
+        .photography:active,
+        .sculpture:active,
+        .admissions:active,
+        .graphic-design:active,
+        .painting-printmaking:active{
+            opacity: 0.75;
+        }
+
 
         /* CSS of Princess' part */
 		.Exhibition{
