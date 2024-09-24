@@ -559,15 +559,35 @@ text-transform: uppercase;
 		    }
         
         /* CSS of Shane's part */
-		.social-media-content{
-			display: flex;
-    		justify-content: center;
-    		gap: 50px;
-		}
+        .card{
+            height:fit-content;
+            background-color: #0F4D92;
+            width:100%;
+        }
+        .footer{
+            padding: 40px 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+            gap: 3rem;
+            background-color:#0F4D92;
+            position:relative;
+            bottom:0;
+            left: 0;
+            right:0;
+        }
+        .footer.card a{
+            display:block;
+        }
+        .footer.card1{
+            max-width: 220px;
+            color:#FFF;
+            margin: 20px 0;
+        }
 		.social-media-content img{
             text-decoration: none;
-			width:50px; 
-			height:50px;
+            display: inline-flex;
+			width:40px; 
+			height:40px;
 			margin:10px;
 			transition: transform 0.3s ease;
 		}
@@ -737,34 +757,34 @@ text-transform: uppercase;
     	    </div>
         </section>
     
-        <section>
+        <section class="footer">
             <!-- Here lies Shane's part -->
-			 <!--Socmed v0.1-->
-				<div class="social-media-content">
+			 <!--Website Footer-->
+            <div class="card1">
+            <img src="yale-logo.png" alt="logo" style: width="150px" height="150px">
+            <h2>Yale School Of Art</h2>
+            <div class="social-media-content">
 					<a href="https://www.instagram.com/yaleschoolofart/" target="_blank">
 						<img src="shinmark/insta-logo.png" alt="Instagram"></a>
 					<a href="https://www.facebook.com/YaleSchoolofArt/" target="_blank">
 						<img src="shinmark/fb-icon.png" alt="Facebook"></a>
 					<a href="https://www.youtube.com/channel/UCDwJT0mYodTSodcpH-hGmdA" target="_blank">
 						<img src="shinmark/yt-icon.png" alt="YouTube"></a>
-			 </div>
-        </section>
-		<section>
-			<!--Footer on creation-->
-            <footer class="footer">
-            <div class="logo">
-            <img src="yale-logo.png" alt="logo" style: width="150px" height="150px">
+			 </div>   
             </div>
-            <div style="padding: 0 0 0 0 5px 5px; float: left; height: 25px;">
-                <img src="shinmark/building.jpg" alt="Photo of Yale School of Art"  style="width: auto;
-                height:100%;
-                object-fit: cover;">
+            <div class="card">
+            <h3>Quick Links</h3>
+            <a href="#">Current Students</a>
+            <a href="#">Faculty and Staff</a>
+            <a href="#">Wiki Sitemap</a>
+            <a href="#">Knowledge Base</a>
             </div>
-            <div class="links-address">
-                <h2>Yale School Of Art</h2>
-                <p>Address: 1156 Chapel St, New Haven, CT 06511</p>
+            <div class="card">
+            <h3>Newsletters and Calendars</h3>
+            <a href="#">Sign up for School of Art Newsletter</a>
+            <a href="#">Community Calendar</a>
+            <a href="#">Academic Calendar</a> 
             </div>
-        </footer>
 		</section>
 
     </body>
