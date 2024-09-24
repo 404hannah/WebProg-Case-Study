@@ -559,19 +559,16 @@ text-transform: uppercase;
 		    }
         
         /* CSS of Shane's part */
-		.social-media img{
-			width:700px;
-			height:700px;
-		}
 		.social-media-content{
 			display: flex;
-    		justify-content: flex-end;
+    		justify-content: center;
     		gap: 50px;
 		}
 		.social-media-content img{
+            text-decoration: none;
 			width:50px; 
 			height:50px;
-			margin:0 auto;
+			margin:10px;
 			transition: transform 0.3s ease;
 		}
 		.social-media-content img:hover{
@@ -743,28 +740,31 @@ text-transform: uppercase;
         <section>
             <!-- Here lies Shane's part -->
 			 <!--Socmed v0.1-->
-			 <div class="social-media">
-				<img src="shinmark/art-collage.png" alt="collage">
 				<div class="social-media-content">
-					<h2>Follow Us</h2>
 					<a href="https://www.instagram.com/yaleschoolofart/" target="_blank">
 						<img src="shinmark/insta-logo.png" alt="Instagram"></a>
 					<a href="https://www.facebook.com/YaleSchoolofArt/" target="_blank">
 						<img src="shinmark/fb-icon.png" alt="Facebook"></a>
 					<a href="https://www.youtube.com/channel/UCDwJT0mYodTSodcpH-hGmdA" target="_blank">
 						<img src="shinmark/yt-icon.png" alt="YouTube"></a>
-				</div>
 			 </div>
         </section>
 		<section>
 			<!--Footer on creation-->
+            <footer class="footer">
             <div class="logo">
             <img src="yale-logo.png" alt="logo" style: width="150px" height="150px">
+            </div>
+            <div style="padding: 0 0 0 0 5px 5px; float: left; height: 25px;">
+                <img src="shinmark/building.jpg" alt="Photo of Yale School of Art"  style="width: auto;
+                height:100%;
+                object-fit: cover;">
+            </div>
             <div class="links-address">
                 <h2>Yale School Of Art</h2>
                 <p>Address: 1156 Chapel St, New Haven, CT 06511</p>
             </div>
-        </div>
+        </footer>
 		</section>
 
     </body>
