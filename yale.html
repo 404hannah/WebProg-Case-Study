@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
     <style>
         /* body tag's css, feel free to edit this one */
@@ -107,7 +108,7 @@
             justify-content: space-between;
             align-items: center;
 
-            background-color: rgb(15, 77, 146);
+            background-color: #0f4d92;
             position: relative;
         }
 
@@ -502,7 +503,6 @@ text-transform: uppercase;
         /* CSS of Shane's part */
         .card{
             height:fit-content;
-            background-color: #1a73e8;
             width:100%;
         }
         .footer{
@@ -510,7 +510,7 @@ text-transform: uppercase;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, auto));
             gap: 3rem;
-            background-color:#1a73e8;
+            background-color:#0f4d92;
             position:relative;
             bottom:0;
             left: 0;
@@ -524,15 +524,18 @@ text-transform: uppercase;
             color:#FFF;
             margin: 20px 0;
         }
-		.social-media-content img{
+        .footer .card1 img{
+            margin-left: 20px ;
+        }
+		.social-media-icons a{
             text-decoration: none;
-            display: inline-flex;
-			width:40px; 
-			height:40px;
-			margin:10px;
+            display: inline-block;
+            font-size: 22px;
+            color:#eee;
+			margin-right: 17px;
 			transition: transform 0.3s ease;
 		}
-		.social-media-content img:hover{
+		.social-media-icons a:hover{
 			transform: scale(1.2);
 		}
         .footer .card h3{
@@ -545,7 +548,13 @@ text-transform: uppercase;
             color:#eee;
             font-size: 16px;
             text-transform: capitalize;
+            text-decoration: none;
             line-height: 38px;
+            transition: all 0.3s ease;
+        }
+        .footer .card a:hover{
+            transform: translateY(-3px) translateX(-5px);
+            color: #eee;
         }
         
     </style>
@@ -706,34 +715,37 @@ text-transform: uppercase;
             <h2>Yale School Of Art</h2>
             <p>1156 Chapel Street, POB 208339 </p>
             <p>New Haven, Connecticut, 06520-8339</p>
-            <div class="social-media-content">
+            <h4>Follow us</h4>
+            <div class="social-media-icons">
 					<a href="https://www.instagram.com/yaleschoolofart/" target="_blank">
-						<img src="shinmark/insta-logo.png" alt="Instagram"></a>
+                        <i class='bx bxl-instagram' ></i></a>
 					<a href="https://www.facebook.com/YaleSchoolofArt/" target="_blank">
-						<img src="shinmark/fb-icon.png" alt="Facebook"></a>
+						<i class='bx bxl-facebook'></i></a>
 					<a href="https://www.youtube.com/channel/UCDwJT0mYodTSodcpH-hGmdA" target="_blank">
-						<img src="shinmark/yt-icon.png" alt="YouTube"></a>
+						<i class='bx bxl-youtube' ></i></a>
+                    <a href="https://twitter.com/yale" target="_blank">
+                        <i class='bx bxl-twitter' ></i></a>
 			 </div>   
             </div>
             <div class="card">
             <h3>Quick Links</h3>
-            <a href="#">Current Students</a>
-            <a href="#">Faculty and Staff</a>
-            <a href="#">Wiki Sitemap</a>
-            <a href="#">Knowledge Base</a>
-            <a href="#">Facilities</a>
-            <a href="#">Courses</a>
-            <a href="#">Opportunities</a>
-            <a href="#">Resources</a>
-            <a href="#">School of Art in the World</a>
+            <a href="https://www.art.yale.edu/about/people/current-students" target="_blank">Current Students</a>
+            <a href="https://www.art.yale.edu/about/people/faculty-and-staff" target="_blank">Faculty and Staff</a>
+            <a href="https://www.art.yale.edu/sitemap" target="_blank">Wiki Sitemap</a>
+            <a href="https://www.art.yale.edu/knowledgebase" target="_blank">Knowledge Base</a>
+            <a href="https://www.art.yale.edu/about/facilities" target="_blank">Facilities</a>
+            <a href="https://www.art.yale.edu/courses" target="_blank">Courses</a>
+            <a href="https://www.art.yale.edu/opportunities" target="_blank">Opportunities</a>
+            <a href="https://www.art.yale.edu/resources" target="_blank">Resources</a>
+            <a href="https://www.art.yale.edu/soa-in-the-world" target="_blank">School of Art in the World</a>
             </div>
             <div class="card">
             <h3>Newsletters and Calendars</h3>
-            <a href="#">Sign up for School of Art Newsletter</a>
-            <a href="#">Community Calendar</a>
-            <a href="#">Academic Calendar</a> 
-            <a href="#">Public Events Calendar</a>
-            <a href="#">SoA in the World Calendar</a>
+            <a href="http://eepurl.com/c4lFMn" target="_blank">Sign up for School of Art Newsletter</a>
+            <a href="https://www.art.yale.edu/calendar" target="_blank">Community Calendar</a>
+            <a href="https://www.art.yale.edu/about/resources/academic-calendar" target="_blank">Academic Calendar</a> 
+            <a href="https://www.art.yale.edu/public-events" target="_blank">Public Events Calendar</a>
+            <a href="https://www.art.yale.edu/soa-in-the-world" target="_blank">SoA in the World Calendar</a>
             </div>
 		</section>
 
