@@ -225,31 +225,44 @@
            
             
         }
-	    .Exhibition-1, .Exhibition-2, .Exhibition-3{
+	    .Exhibition-1, .Exhibition-3{
             display: grid;
             grid-gap: 20px;
             display: flex;
 
 		}
-		.SPREAD,.Hourglass, .DOOM {
-            display: flex;
+
+		.SPREAD, .DOOM {
+            position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
             
 
 }
-        .SPREAD iframe, .Hourglass iframe, .DOOM iframe {
+        .SPREAD iframe, .DOOM iframe {
            
-            object-fit:cover;
-             margin-left: auto;
-             margin-right: auto;
-            width: 55.625rem;
-            height: auto;
+            position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-top: 50px;
+  padding-bottom: 50px;
   
+}
+.Rectangle-SPREAD, .Rectangle-DOOM{
+    overflow-wrap: normal;
 }
 
     /* Exhibition 1 styles */
 	.Exhibition-1 {
 		
 		background: #0F4D92;
+    
        
 }
 .Exhibition-1 h1 {
@@ -258,7 +271,6 @@
 
 color: #000;
 text-align:center;
-float:left;
 font-family: "Alegreya Sans SC";
 font-size: 3rem;
 font-style: normal;
@@ -273,7 +285,6 @@ text-transform: uppercase;
 
 color: #000;
 text-align:center;
-float:left;
 font-family: "Alegreya Sans SC";
 font-size: 1.5rem;
 font-style: normal;
@@ -301,42 +312,9 @@ text-transform: uppercase;
 }
 .Rectangle-SPREAD{
             width: auto;
-            height: 64rem;
+            height: auto;
             background: #FFF;
-            display: block;
-  justify-content: left;
-  align-items: center;
-}
-
-
-/* Exhibition 2 styles */
-
-.Exhibition-2 {
-		background-color: #ffe515;           
-}
-.Exhibition-2 h2 {
-	
-
-color: #FFF;
-text-align: center;
-font-family: "Alegreya Sans";
-font-size: 2.5rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: uppercase;
-}
-
-
-
-.Hourglass iframe {
-	float: inline-start;
-}
-.Rectangle-Hourglass{
-	        width: auto;
-            height: 64rem;
-            background: #000000;
-            display: flex;
+            
   justify-content: left;
   align-items: center;
 }
@@ -357,7 +335,7 @@ color: #000;
 text-align: center;
 
 font-family: "Alegreya Sans";
-font-size: 2.5rem;
+font-size: 3rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -371,7 +349,7 @@ text-transform: uppercase;
 }
 .Rectangle-DOOM{
             width: auto;
-            height: 64rem;
+            height: auto;
             background: #FFF;
             display: flex;
   justify-content: left;
@@ -634,17 +612,6 @@ text-transform: uppercase;
 					<iframe src ="https://my.matterport.com/show/?m=eMoimCBUCp3" title = ""></iframe>
 				</div>
 	
-	 	</div>
-	
-	  <div class="Exhibition-2">
-		<div class = "Rectangle-Hourglass">
-			<h2>2024 PHOTOGRAPHY MFA THESIS EXHIBITION</h2> 
-            
-		</div>
-				<div class="Hourglass">
-					<iframe src ="https://my.matterport.com/show/?m=xyte9kssoKZ" title = ""></iframe>
-
-				</div>
 	 	</div>
 	
 	  <div class="Exhibition-3">
