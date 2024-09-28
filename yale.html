@@ -376,141 +376,310 @@ display: block;
 	/* 1st Part */
 	.calendar-section {
             text-align: center;
-            padding: 20px;
+            padding: 5px;
+	    background-image: url('file:///C:/Users/Admin/Downloads/webprog%20case%20stud/bgdCalendar.gif');
         }
+
         .calendar-section h2 {
-            font-size: 3.2vw;
-            margin-bottom: 20px;
+            padding-left: 5vw;
+            text-align: left;
+            font-size: 5vw;
             font-weight: bold;
-	    padding-bottom: 20px;
+	    margin-bottom: 25px;
         }
+
+        .event-cards-container {
+            width: 100%; 
+            overflow: hidden;
+            position: relative;
+	    display: flex;
+    	    justify-content: left;
+        }
+
         .event-cards {
             display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-	    padding-bottom: 20px;	
+            transition: transform 0.5s ease;
+	    margin: 0 50px;
         }
+
         .event-card {
             background-color: white;
-            border-radius: 8px;
             overflow: hidden;
-            width: 250px;
+            max-width: 22.04vw;
+	    min-width: 20.04vw;
+            height: auto; 
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: left;
+            margin: 1.04vw;
+            flex-shrink: 0;
+            opacity: 0.8;
+            transition: transform 0.5s ease, opacity 0.5s ease; 
         }
+
+        .event-card.active {
+            transform: scale(1.1);
+	    opacity: 1;
+        }
+
         .event-card img {
-            width: 100%;
-            height: 250px;
+            max-width: 100%;
+	    width: 22.04vw;
+            height: 30.93vh;
             object-fit: cover;
         }
+
         .date {
             background-color: #1a73e8;
-    	    color: white;
-    	    padding: 5px;
-            font-size: 20px;
-    	    font-weight: bold;
-    	    text-align: center;
-    	    width: 50%;
-            margin: -20px auto 0 auto;
-    	    border-radius: 5px;
-    	    position: relative;
-     	    z-index: 1;
-	    left: -15%
+            color: white;
+            padding: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            width: 50%;
+            margin: -20px auto 0;
+            position: relative;
+            z-index: 1;
         }
-	.date:hover {
-	    background-color: #155a9f;
-	}
-	.no-underline {
-	    text-decoration: none;
-	}
+
+        .date:hover {
+            background-color: #155a9f;
+        }
+
         .event-info {
             padding: 15px;
-	    padding-top: 0px;
+            padding-top: 0px;
         }
+
         .event-info h3 {
-            font-size: 18px;
-            margin: 15px 0;
-            font-weight: bold;
+                font-size: 18px;
+                font-weight: bold;
+                color: black;
         }
+
         .event-info p {
-            font-size: 14px;
+            font-size: 15px;
             color: #555;
-	    line-height: 1.3;
+            line-height: 1.3;
         }
-	.button {
-    	    background-color: #1a73e8; /* Blue color */
-    	    color: white;
-    	    padding: 10px 20px;
-    	    border: none;
-    	    border-radius: 5px; /* Rounded corners */
-            font-size: 20px;
-    	    cursor: pointer;
-    	    margin-top: 20px;
-    	    transition: background-color 0.3s;
-  	    width: 250px;
-	}
-	.button:hover {
-    	    background-color: #155a9f; /* Darker blue when hovered */
-	}
+
+        .calbutton {
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 1.8vw;
+            cursor: pointer;
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+            transition: background-color 0.3s;
+            width: 30.5vw;
+            max-width: 100%;
+        }
+
+        .calbutton:hover {
+            background-color: #155a9f; 
+        }
+
+        .no-underline {
+            text-decoration: none;
+        } 
+
 	    /* 2nd Part*/
         .news-section {
-    		position: relative;
-    		text-align: center;
-    		padding: 25px 50px;
-	    	margin: 30px auto;
-    		width: 100%;
-    		max-width: 100%;
-    		box-sizing: border-box;
-    		overflow: hidden;
-		}
-	.news-section img.blurred-image {
-    		position: absolute;
-    		top: 0;
-    		left: 0;
-    		width: 100%;
-    		height: 100%;
-    		object-fit: cover; 
-    		filter: blur(2px);
-    		filter: brightness(30%);
-    		z-index: -1; 
-		    }
-	.news-title {
-    		font-size: 4em;
-		    font-family: Inria, serif;
-    		margin-bottom: 40px;
-    		position: relative;
-    		z-index: 1;
-    		color: #ffffff;
-		    }
-	.news-articles {
-    		display: flex;
-    		padding-top: 10px;
-    		justify-content: space-between;
-    		flex-wrap: wrap;
-    		position: relative; 
-    		z-index: 1;
-    		gap: 20px;
-		    }
-	.news-article {
-    		flex: 1;
-    		box-sizing: border-box;
-    		max-width: calc(33.333% - 20px);
-    		margin-bottom: 20px;
-		}
-	.news-image {
-    		width: 250px;
-    		height: 250px;
-    		border-radius: 8px;
-    		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    		object-fit: cover;
-    		margin: 0 auto;
-		    }
-	.news-text {
-    		margin-top: 10px;
-    		font-size: 1.8em;
-    		color: #85a9d1;
-		    }
+            text-align: center;
+            padding: 5px;
+	    background-color: #e8e827;
+	    padding-bottom: 3.5vw;
+	    position: relative;
+        }
+	.news-part {
+	    padding-bottom: 2vw;
+	}
+        .article {
+            text-align: center;
+            margin-top: 20px;
+        }
+	.article-cards-container {
+    	    position: relative;
+            padding: 5px;
+        }
+
+        .article-content {
+            display: flex;
+	    flex-direction: row-reverse;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+.article-image {
+    width: 40%;
+    margin-left: 5vw;
+    margin-top: 4vw;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1vw solid #ffffff;
+}
+
+.article-image img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 3px solid #1a73e8;
+}
+
+.article-text {
+    width: 45%;
+    padding-left: 5vw;
+    padding-right: 7vw;
+    text-align: left;
+}
+.article-text h2 {
+	    background-color: white;
+            text-align: center;
+            font-size: 3.8vw;
+            font-weight: bold;
+	    margin-top: 7vw;
+}
+.article-text h3 {
+    font-size: 43px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: #000000;
+}
+
+.article-text p {
+    font-size: 28px;
+    line-height: 1.5;
+    margin-left: 20px;	
+    color: #050505;
+}
+
+.article-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between;
+    left: 0;
+}
+
+.article-controls button {
+    background-color: #ffffff;
+    color: #155a9f;
+    font-size: 2vw;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 20px;
+    opacity: 0.8;
+}
+
+.article-controls button:hover {
+    background-color: #155a9f;
+    color: white;
+    opacity: 1;
+}
+.article-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    padding: 20px; 
+}
+.triangle {
+    position: absolute;
+    border-style: solid;
+    opacity: 0.5; 
+    background-color: white; 
+    animation: spin 10s linear infinite; 
+}
+
+.triangle1 {
+    border-width: 0 30px 52px 30px;
+    border-color: transparent transparent white transparent;
+    top: 10%;
+    left: 20%;
+    animation-duration: 18s;
+}
+
+.triangle2 {
+    border-width: 0 20px 34px 20px; 
+    border-color: transparent transparent white transparent;
+    top: 37%; 
+    left: 48%;
+    animation-duration: 42s; 
+}
+
+.triangle3 {
+    border-width: 0 40px 69px 40px;
+    border-color: transparent transparent white transparent;
+    top: 70%;
+    left: 40%;
+    animation-duration: 30s;
+}
+.triangle4 {
+    border-width: 0 10px 29px 5px;
+    border-color: transparent transparent white transparent;
+    top: 90%;
+    left: 60%;
+    animation-duration: 9s;
+}
+.triangle5 {
+    border-width: 0 40px 69px 40px;
+    border-color: transparent transparent white transparent;
+    top: 70%;
+    left: 80%;
+    animation-duration: 30s;
+}
+.triangle6 {
+    border-width: 0 40px 69px 40px;
+    border-color: transparent transparent white transparent;
+    top: 85%;
+    left: 10%;
+    animation-duration: 20s;
+}
+.triangle7s {
+    border-width: 0 20px 39px 10px;
+    border-color: transparent transparent white transparent;
+    top: 10%;
+    left: 79%;
+    animation-duration: 50s;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+        @media (max-width: 768px) {
+            .calendar-section h2 {
+                font-size: 30px;
+                padding-bottom: 0px;
+            }
+            .event-card, .article-card {
+                width: calc(95% - 10px);
+                max-width: none;
+            }
+            .event-info h3, .article-info h3 {
+                font-size: 18px;
+            }
+            .event-info p, .article-info p {
+                font-size: 15px;
+            }
+            .button {
+                font-size: 5vw;
+                width: 80%;
+            }
+        }
         
         /* CSS of Shane's part */
         .card{
@@ -650,75 +819,191 @@ display: block;
     
     <section>
         <!-- Here lies Stephen's part -->
-        <!-- First part, Still to be updated -->
 	<div class="calendar-section">
     	    <h2>ON THE CALENDAR</h2>
-    	    <div class="event-cards">
-        	<div class="event-card">
-            	    <img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/yy_toolsofthetrade_1300x866.webp" alt="A picture of a woman sewing a fabric">
-             	    <a href="https://www.art.yale.edu/public-events" target="_blank" class="no-underline"><div class="date">SEPT 09</div></a>
-            	    <div class="event-info">
-                	<h3>YALE TEXTILE WORKING GROUP</h3>
-                	<p>Hosted by Kathleen Quaint, History of Art PhD Student</p>
-                	<p>5-7 PM<br>Loria Center</p>
-            	    </div>
-       	 	</div>
-                <div class="event-card">
-            	    <img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/library.webp" alt="An image of Yale Library's lobby">
-            	    <a href="https://www.art.yale.edu/public-events" target="_blank" class="no-underline"><div class="date">SEPT 10</div></a>
-            	    <div class="event-info">
-                	<h3>LIBRARY POP-UP EXHIBITION</h3>
-                	<p>An arts librarian will be onsite to answer your questions and showcase new library materials.</p>
-                	<p>11:30 AM - 1 PM<br>353 Crown Street Lobby</p>
-            	    </div>
-        	</div>
-        	<div class="event-card">
-            	    <img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/painting.webp" alt="A picture of three people talking, surrounded by paintings">
-            	    <a href="https://www.art.yale.edu/public-events" target="_blank" class="no-underline"><div class="date">SEPT 11</div></a>
-            	    <div class="event-info">
-                	<h3>PRESENTATION OF MFA CRIT WORK</h3>
-                	<p>Hosted by Diego León and Zak Nguyen</p>
-                	<p>1-3 PM & 7-9 PM<br>353 Crown Street, the Pit</p>
-            	    </div>
-        	</div>
-        	<div class="event-card">
-            	    <img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/painting.jpg" alt="A picture of paintings">
-            	    <a href="https://www.art.yale.edu/public-events" target="_blank" class="no-underline"><div class="date">SEPT 12</div></a>
-            	    <div class="event-info">
-                	<h3>MFA CRITS IN PHOTOGRAPHY</h3>
-                	<p>Hosted by Christopher Post, Emily Wall, and Luis Manuel Diaz</p>
-                	<p>3-5 PM<br>Chapel Street, New Haven</p>
-            	    </div>
-	        </div>
+    	    <div class="calendar-section">
+            <h2>ON THE CALENDAR</h2>
+            <div class="event-cards-container">
+                <div class="event-cards">
+                    <div class="event-card active">
+                        <img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/yy_toolsofthetrade_1300x866.webp" alt="A picture of a woman sewing a fabric">
+                        <a href="https://www.art.yale.edu/public-events" target="_blank" class="no-underline"><div class="date">SEPT 09</div></a>
+                        <div class="event-info">
+                            <h3>YALE TEXTILE WORKING GROUP</h3>
+                            <p>Hosted by Kathleen Quaint, History of Art PhD Student</p>
+                            <p>5-7 PM<br>Loria Center</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/library.webp" alt="An image of Yale Library's lobby">
+                        <a href="https://www.art.yale.edu/public-events" target="_blank" class="no-underline"><div class="date">SEPT 10</div></a>
+                        <div class="event-info">
+                            <a href="https://www.art.yale.edu/public-events" target="_blank" class="no-underline"><h3>LIBRARY POP-UP EXHIBITION</h3></a>
+                            <p>An arts librarian will be onsite to answer your questions and showcase new library materials.</p>
+                            <p>11:30 AM - 1 PM<br>353 Crown Street Lobby</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/painting.webp" alt="A picture of three people talking, surrounded by paintings">
+                        <a href="https://www.art.yale.edu/public-events" target="_blank" class="no-underline"><div class="date">SEPT 11</div></a>
+                        <div class="event-info">
+                            <a href="https://www.art.yale.edu/public-events" target="_blank" class="no-underline"><h3>PRESENTATION OF MFA CRIT WORK</h3></a>
+                            <p>Hosted by Diego León and Zak Nguyen</p>
+                            <p>1-3 PM & 7-9 PM<br>353 Crown Street, the Pit</p>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/painting.jpg" alt="A picture of paintings">
+                        <a href="https://www.art.yale.edu/public-events" target="_blank" class="no-underline"><div class="date">SEPT 12</div></a>
+                        <div class="event-info">
+                            <a href="https://www.art.yale.edu/public-events" target="_blank" class="no-underline"><h3>MFA CRITS IN PHOTOGRAPHY</h3></a>
+                            <p>Hosted by Christopher Post, Emily Wall, and Luis Manuel Diaz</p>
+                            <p>3-5 PM<br>Chapel Street, New Haven</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="https://www.art.yale.edu/public-events" target="_blank" class="no-underline"><button id="calendar" class="button">SEE MORE</button></a>
+            <a href="https://www.art.yale.edu/public-events" target="_blank" class="no-underline"><button id="calendar" class="calbutton">SEE FULL CALENDAR</button></a>
         </div>
     </section>
-    <!-- THIS PART ALSO NEEDS PLENTY OF ADJUSTMENT-->
-    <section class="news-section">
-    	<img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/school.jpg" alt="Background Image" class="blurred-image">
-    	<h2 class="news-title">In The News</h2>
-   	        <div class="news-articles">
-                
-        	    <article class="news-article">
-            		<img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/yy_toolsofthetrade_1300x866.webp" alt="Image of a Woman Sewing a Fabric" class="news-image">
-            		<p class="news-text">--- From New Haven ---</p>
-            		<p style="font-size: 22px; color: #ffffff;"> A public monthly newsletter about news and events happening on campus.</p>
-        	    </article>
-        
-        	    <article class="news-article">
-            		<img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/photog.jpg" alt="A girl at an art Exhibit Pointing at a portrait" class="news-image">
-            		<p class="news-text">--- Week at SoA ---</p>
-           	 	    <p style="font-size: 22px; color: #ffffff;">A weekly community-only email listing SoA events as well as public and university events.</p>
-        	    </article>
-        
-       	 	    <article class="news-article">
-            		<img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/commu.jpg" alt="An empty office with chairs messy work desks" class="news-image">
-            		<p class="news-text">--- For the Community ---</p>
-            		<p style="font-size: 22px; color: #ffffff;">SoA is seeking a Gallery Exhibition Manager to oversee operations of our exhibition spaces.</p>
-        	    </article>
-    	    </div>
-        </section>
+    <script>
+        let currentIndex = 0;
+const calendarCards = document.querySelectorAll('.event-card');
+const totalCalendarCards = calendarCards.length;
+let calendarSlidingInterval;
+let calendarClickTimeout;
+const vwValue = window.innerWidth * (22.04 / 100);
+const vwMargin = window.innerWidth * (0.28 / 100);
+
+function showNextCalendarCard() {
+    calendarCards[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % totalCalendarCards;
+    calendarCards[currentIndex].classList.add('active');
+    const offset = -currentIndex * (vwValue + vwMargin);
+    document.querySelector('.event-cards').style.transform = `translateX(${offset}px)`;
+}
+
+function highlightCalendarCard(index) {
+    calendarCards[currentIndex].classList.remove('active');
+    currentIndex = index; 
+    calendarCards[currentIndex].classList.add('active');
+    const offset = -currentIndex * (vwValue + vwMargin);
+            document.querySelector('.event-cards').style.transform = `translateX(${offset}px)`;
+
+            clearInterval(calendarSlidingInterval);
+            clearTimeout(calendarClickTimeout);
+
+            calendarClickTimeout = setTimeout(() => {
+                calendarSlidingInterval = setInterval(showNextCalendarCard, 4000);
+            }, 5000); 
+        }
+
+        calendarCards.forEach((card, index) => {
+            card.addEventListener('click', () => highlightCalendarCard(index));
+        });
+            
+        calendarSlidingInterval = setInterval(showNextCalendarCard, 4000);
+
+        calendarCards[currentIndex].classList.add('active');
+    </script>
+
+    <!-- ADJUSTMENT-STILL, DESIGN'S A BIT OFF-->
+    <section class="news-part">
+    <div class="news-section">
+	<div class="triangle triangle1"></div>
+        <div class="triangle triangle2"></div>
+        <div class="triangle triangle3"></div>
+	<div class="triangle triangle4"></div>
+        <div class="triangle triangle5"></div>
+        <div class="triangle triangle6"></div>
+	<div class="triangle triangle7"></div>
+        <div class="article-cards-container">
+            <div class="article-cards">
+                <div class="article-card">
+                    <div class="article-content">
+                        <div class="article-text">
+			    <h2>>>> NEWS <<<</h2>
+                            <a href="https://yale.us14.list-manage.com/subscribe?u=c7ccb8ef693ab66aa235e6c03&id=570166342a" target="_blank" class="no-underline"><h3>From New Haven</h3></a>
+                            <p>A public monthly newsletter about news and events happening on campus.</p>
+                        </div>
+                        <div class="article-image">
+                            <img src="file:///C:/Users/Admin/Downloads/webprog%20case%20stud/new%20haven.jpeg" alt="An image of Yale Library's lobby">
+                        </div>
+                    </div>
+                </div>
+		<div class="article-controls">
+                    	    <button id="prev-btn"><</button>
+                    	    <button id="next-btn">></button>
+                </div>                 
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script>
+const newsHeader = [
+    "From New Haven",
+    "A Week at SoA",
+    "For the Community"
+];
+
+const newsTexts = [
+    "A public monthly newsletter about news and events happening on campus.",
+    "A weekly community-only email listing SoA events as well as public and university events.",
+    "SoA is seeking a Gallery Exhibition Manager to oversee operations of our exhibition spaces."
+];
+
+const newsImages = [
+    "file:///C:/Users/Admin/Downloads/webprog%20case%20stud/new%20haven.jpeg", 
+    "file:///C:/Users/Admin/Downloads/webprog%20case%20stud/yale-news.jpg",  
+    "file:///C:/Users/Admin/Downloads/webprog%20case%20stud/yale-cam.webp"  
+];
+
+let newsCurrentIndex = 0; 
+const headerDisplay = document.querySelector(".article-text h3");
+const textDisplay = document.querySelector(".article-text p");
+const imageDisplay = document.querySelector(".article-image img");
+
+let autoChangeInterval; 
+let isPaused = false; 
+
+function updateNewsArticle(index) {
+    headerDisplay.textContent = newsHeader[index];
+    textDisplay.textContent = newsTexts[index];
+    imageDisplay.src = newsImages[index];
+}
+
+function nextNewsItem() {
+    newsCurrentIndex = (newsCurrentIndex + 1) % newsTexts.length;
+    updateNewsArticle(newsCurrentIndex);
+    resetAutoChange();
+}
+
+function prevNewsItem() {
+    newsCurrentIndex = (newsCurrentIndex - 1 + newsTexts.length) % newsTexts.length;
+    updateNewsArticle(newsCurrentIndex);
+    resetAutoChange(); 
+}
+
+function resetAutoChange() {
+    clearInterval(autoChangeInterval);
+    if (!isPaused) { 
+        isPaused = true; 
+        setTimeout(startAutoChange, 5000); 
+    }
+}
+
+function startAutoChange() {
+    autoChangeInterval = setInterval(nextNewsItem, 5000);
+    isPaused = false;
+}
+
+document.getElementById("next-btn").addEventListener("click", nextNewsItem);
+document.getElementById("prev-btn").addEventListener("click", prevNewsItem);
+
+startAutoChange();
+
+</script>
     
         <section class="footer">
             <!-- Here lies Shane's part -->
