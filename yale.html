@@ -30,6 +30,8 @@
         .menu{
             display: flex;
 			flex-direction: row;
+            justify-content: end;
+			align-items: center;   
 
 			position: relative;
 			z-index: 2;
@@ -37,9 +39,6 @@
 			width: 100%;
 			height: 75px;
 			background-color: rgba(0, 0, 0, 0);
-
-			justify-content: end;
-			align-items: center;       
         }
 
         .menu-search,
@@ -49,9 +48,11 @@
             font-family: Open Sans;
             font-size: 20px;
             font-weight: bold;
-            color: rgb(15, 77, 146);
+            color: #0f4d92;
 
             transition-property: opacity;
+            transition-duration: 0.2s;
+            transition-timing-function: ease;
         }
 
 		.menu-search,
@@ -66,11 +67,7 @@
         }
 
 		.menu-search{
-            padding-top: 5px;
-
             transition-property: transform;
-            transition-duration: 0.2s;
-            transition-timing-function: ease;
         }           
 
 		.menu-more{
@@ -81,8 +78,6 @@
         .menu-exhibitions,
         .menu-more{
             transition-property: font-size;
-            transition-duration: 0.2s;
-            transition-timing-function: ease;
         }
 
         .menu-search:hover{
@@ -131,8 +126,7 @@
             text-align: center;
             text-decoration: none;
 			
-            transition-property: opacity;
-            transition-property: flex;
+            transition-property: opacity, flex;
             transition-duration: 0.2s;
             transition-timing-function: ease;
 
@@ -219,9 +213,8 @@
         .apply:active,
         .graphic-design:active,
         .painting-printmaking:active{
-            opacity: 0.75;
+            opacity: 0.8;
         }
-
 
         /* CSS of Princess' part */
 		.Exhibition{
@@ -584,15 +577,13 @@ display: block;
         <!-- Hannah's and/or Gabriel's part-->
 		<div class="menu-name-about">
             <div class="menu">
-                <div class="menu-search">
-                    <img src="Hannah/Magnifying glass.png" alt="Magnifying glass" width="25px"></img>
-                </div>
+                <img src="Hannah/Magnifying glass.png" class="menu-search" alt="Magnifying glass" width="25px"></img>
 
-                <a href="https://www.art.yale.edu/apply" target = "_blank" class="menu-apply">Apply</a>
+                <a href="https://www.art.yale.edu/apply" target="_blank" class="menu-apply">Apply</a>
                 
-                <a href="https://www.art.yale.edu/exhibitions" target = "_blank" class = "menu-exhibitions">Exhibitions</a>
+                <a href="https://www.art.yale.edu/exhibitions" target="_blank" class="menu-exhibitions">Exhibitions</a>
                
-                <div class="menu-more">More</div>
+                <p class="menu-more">More</p>
             </div>
         </div>
     </header>
@@ -605,24 +596,24 @@ display: block;
         <!-- Here lies Hannah's part -->
         <div class="application-and-programs">
             <a href="https://www.art.yale.edu/about/study-areas/graduate-study-areas/photography" target="_blank" class="photography">
-                <div class="txt-photography">P<br>H<br>O<br>T<br>O<br>G<br>R<br>A<br>P<br>H<br>Y</div>
+                <p class="txt-photography">P<br>H<br>O<br>T<br>O<br>G<br>R<br>A<br>P<br>H<br>Y</p>
             </a>
 
             <a href="https://www.art.yale.edu/about/study-areas/graduate-study-areas/sculpture" target="_blank" class="sculpture">
-                <div class="txt-sculpture">S<br>C<br>U<br>L<br>P<br>T<br>U<br>R<br>E</div>
+                <p class="txt-sculpture">S<br>C<br>U<br>L<br>P<br>T<br>U<br>R<br>E</p>
             </a>
 
             <a href="https://www.art.yale.edu/apply" target="_blank" class="apply">
-                <div class="txt-apply">APPLY</div>
+                <p class="txt-apply">APPLY</p>
             </a>
 
             <a href="https://www.art.yale.edu/about/study-areas/graduate-study-areas/graphic-design" target="_blank" class="graphic-design">
-                <div class="txt-graphic-design">G<br>R<br>A<br>P<br>H<br>I<br>C<br><br>D<br>E<br>S<br>I<br>G<br>N</div>
+                <p class="txt-graphic-design">G<br>R<br>A<br>P<br>H<br>I<br>C<br><br>D<br>E<br>S<br>I<br>G<br>N</p>
             </a>
 
             <a href="https://www.art.yale.edu/about/study-areas/graduate-study-areas/painting" target="_blank" class="painting-printmaking">
-                <div class="txt-painting">P<br>A<br>I<br>N<br>T<br>I<br>N<br>G<br><br>A<br>N<br>D</div>
-                <div class="txt-printmaking">P<br>R<br>I<br>N<br>T<br>M<br>A<br>K<br>I<br>N<br>G</div>
+                <p class="txt-painting">P<br>A<br>I<br>N<br>T<br>I<br>N<br>G<br><br>A<br>N<br>D</p>
+                <p class="txt-printmaking">P<br>R<br>I<br>N<br>T<br>M<br>A<br>K<br>I<br>N<br>G</p>
             </a>
         </div>
     </section>
