@@ -20,6 +20,7 @@
         }
         /* CSS of Hannah's part */
 		.menu-name-about{
+	    display: flex;
             background-image: url("Hannah/Background Image 1.png");
             background-size: cover;
             background-position: center;
@@ -100,6 +101,64 @@
         }
 
         /* CSS of Gabriel's part */
+	    .intro{
+            font-family: Arial, sans-serif;
+            font-size: 20%;
+            text-align: center;
+            font-size: 24px;
+            background-color: #15488371;
+            border-radius: 12px;
+            position: absolute;
+            bottom: 0;
+            
+        }
+
+        .Ylogo{
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             height: 56%; 
+             width: 55%;
+             opacity: .8;
+        }
+        
+        .menu-more ul {
+            display: none;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            position: absolute;
+            top: 46.5px; 
+            right: 0;
+            border: 0px solid #ccc;
+            width: 160px;
+            z-index: 10;
+        }
+        .menu-more ul li {
+            padding: 10px; 
+            font-size: 18px;
+        }
+
+        .menu-more ul li:last-child {
+            border-bottom: none;
+        }
+
+        .menu-more ul li a {
+            text-decoration: none;
+            color: #0f4d92;
+            display: block;
+        }
+
+        .menu-more ul li:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            
+        }
+        .menu-more:hover ul {
+            display: block; 
+        }
         
         /* CSS of Hannah's part */
 		.application-and-programs{
@@ -746,14 +805,35 @@ display: block;
     <header>
         <!-- Hannah's and/or Gabriel's part-->
 		<div class="menu-name-about">
+			 <img src="logoyale.png" alt="Ylogo" class="Ylogo">
+            <p class="intro">"The Yale School of Art is a graduate school that confers MFAs in Graphic Design,
+                Painting/Printmaking, Photography, and Sculpture; and offers undergraduate-level art courses
+                 to Yale College students." </p>
+
             <div class="menu">
                 <img src="Hannah/Magnifying glass.png" class="menu-search" alt="Magnifying glass" width="25px"></img>
 
                 <a href="https://www.art.yale.edu/apply" target="_blank" class="menu-apply">Apply</a>
                 
                 <a href="https://www.art.yale.edu/exhibitions" target="_blank" class="menu-exhibitions">Exhibitions</a>
-               
+		    
+              <div class="menu-more">
                 <p class="menu-more">More</p>
+		      <ul>
+                        <li><a href= https://www.art.yale.edu/about target="_blank">About</a></li>
+                        <li><a href="https://www.art.yale.edu/publications" target="_blank">Publications</a></li>
+                        <li><a href="https://www.art.yale.edu/public-events"target="_blank">Public Events</a></li>
+                        <li><a href="https://www.art.yale.edu/news"target="_blank">Newsletter</a></li>
+                        <li><a href="https://www.art.yale.edu/about/resources/academic-calendar"target="_blank">Calendar</a></li>
+                        <li><a href="https://www.art.yale.edu/about/people/current-students"target="_blank">Students</a></li>
+                        <li><a href="https://www.art.yale.edu/about/people/faculty-and-staff"target="_blank">Faculty & Staff</a></li>
+                        <li><a href= "https://www.art.yale.edu/about/facilities target="_blank">Facilities</a></li>                       
+                        <li><a href= "https://www.art.yale.edu/courses target="_blank">Courses</a></li>
+                        <li><a href= "https://www.art.yale.edu/opportunities target="_blank">Opportunities</a></li>
+                        <li><a href= "https://www.art.yale.edu/resources target="_blank">Resources</a></li>
+                                             
+                    </ul>
+	      </div>
             </div>
         </div>
     </header>
