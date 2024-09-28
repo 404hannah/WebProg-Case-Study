@@ -272,6 +272,7 @@
 /* Exhibition 1 styles */
 	.Exhibition-1 {
 		background: #0F4D92;
+        
     }
 
     .Exhibition-1 h1 {
@@ -283,13 +284,14 @@
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
+        display: flex;
     }
 
     .Exhibition-1 p {
         color: #000;
         text-align:center;
         font-family: "Alegreya Sans SC";
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
@@ -332,16 +334,47 @@
         line-height: normal;
         text-transform: uppercase;
     }
+    .Exhibition-2 p {
+        color: #000;
+        text-align:center;
+        font-family: "Alegreya Sans SC";
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-transform: uppercase;
+    }
 
     .Rectangle-DOOM{
         width: auto;
         height: auto;
         background: #FFF;
-        display: flex;
+        
         justify-content: left;
         align-items: center; 
 }
-
+.Explore{
+    color: #000;
+text-decoration: none;
+text-align:center;
+        font-family: "Alegreya Sans SC";
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-transform: uppercase;
+background-image: linear-gradient(#ffe515, #ffe515);
+background-size: 100% 0.1em;
+background-position-y: 100%;
+background-repeat: no-repeat;
+transition: background-size 0.2s ease-in-out;
+display: block;
+}
+.Explore:hover,
+.Explore:focus,
+.Explore:active {
+    background-size: 100% 100%;
+}
 
 
         
@@ -611,7 +644,8 @@
         
             <div class="Exhibition-2">
                 <div class = "Rectangle-DOOM">
-                    <h2>2024 SCULPTURE MFA THESIS EXHIBITION</h2>
+                    <h2>2024 SCULPTURE MFA THESIS EXHIBITION</h2> <br>
+                    <a href="#" class = "Explore">Explore</a>
                 </div>
                 <div class="DOOM">
                     <iframe src ="https://my.matterport.com/show/?m=bijcaioLaSd" title = ""></iframe>
