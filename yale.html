@@ -20,7 +20,7 @@
         }
         /* CSS of Hannah's part */
 		.menu-name-about{
-	    display: flex;
+	        display: flex;
             background-image: url("Hannah/Background Image 1.png");
             background-size: cover;
             background-position: center;
@@ -31,7 +31,7 @@
         .menu{
             display: flex;
 			flex-direction: row;
-            justify-content: end;
+            justify-content: space-between;
 			align-items: center;   
 
 			position: relative;
@@ -42,6 +42,18 @@
 			background-color: rgba(0, 0, 0, 0);
         }
 
+        .menu-left{
+            flex: 1;
+            margin-left: 50px;
+        }  
+
+        .menu-right{
+            display: flex;
+			flex-direction: row;
+            justify-content: end;
+        }  
+
+        .menu-name,
         .menu-search,
         .menu-apply,
         .menu-exhibitions,
@@ -50,7 +62,12 @@
             font-size: 20px;
             font-weight: bold;
             color: #0f4d92;
+        }
 
+        .menu-search,
+        .menu-apply,
+        .menu-exhibitions,
+        .menu-more{
             transition-property: opacity;
             transition-duration: 0.2s;
             transition-timing-function: ease;
@@ -846,29 +863,34 @@
                 to Yale College students.</p>
 
             <div class="menu">
-                <img src="Hannah/Magnifying glass.png" class="menu-search" alt="Magnifying glass" width="25px"></img>
+                <div class="menu-left">
+                    <p class="menu-name">Yale School of Art</p>
+                </div>
+                <div class="menu-right"></div>
+                    <img src="Hannah/Magnifying glass.png" class="menu-search" alt="Magnifying glass" width="25px"></img>
 
-                <a href="https://www.art.yale.edu/apply" target="_blank" class="menu-apply">Apply</a>
+                    <a href="https://www.art.yale.edu/apply" target="_blank" class="menu-apply">Apply</a>
+                    
+                    <a href="https://www.art.yale.edu/exhibitions" target="_blank" class="menu-exhibitions">Exhibitions</a>
                 
-                <a href="https://www.art.yale.edu/exhibitions" target="_blank" class="menu-exhibitions">Exhibitions</a>
-		    
-                <div class="menu-more">
-                    <p>More</p>
-		            <ul>
-                        <li><a href= https://www.art.yale.edu/about target="_blank">About</a></li>
-                        <li><a href="https://www.art.yale.edu/publications" target="_blank">Publications</a></li>
-                        <li><a href="https://www.art.yale.edu/public-events"target="_blank">Public Events</a></li>
-                        <li><a href="https://www.art.yale.edu/news"target="_blank">Newsletter</a></li>
-                        <li><a href="https://www.art.yale.edu/about/resources/academic-calendar"target="_blank">Calendar</a></li>
-                        <li><a href="https://www.art.yale.edu/about/people/current-students"target="_blank">Students</a></li>
-                        <li><a href="https://www.art.yale.edu/about/people/faculty-and-staff"target="_blank">Faculty & Staff</a></li>
-                        <li><a href="https://www.art.yale.edu/about/facilities"target="_blank">Facilities</a></li>                       
-                        <li><a href="https://www.art.yale.edu/courses"target="_blank">Courses</a></li>
-                        <li><a href="https://www.art.yale.edu/opportunities"target="_blank">Opportunities</a></li>
-                        <li><a href="https://www.art.yale.edu/resources"target="_blank">Resources</a></li>
-                        <li><a href="https://www.art.yale.edu/"target="_blank">Bulletin Board</a></li>
-                    </ul>
-	            </div>
+                    <div class="menu-more">
+                        <p>More</p>
+                        <ul>
+                            <li><a href= https://www.art.yale.edu/about target="_blank">About</a></li>
+                            <li><a href="https://www.art.yale.edu/publications" target="_blank">Publications</a></li>
+                            <li><a href="https://www.art.yale.edu/public-events"target="_blank">Public Events</a></li>
+                            <li><a href="https://www.art.yale.edu/news"target="_blank">Newsletter</a></li>
+                            <li><a href="https://www.art.yale.edu/about/resources/academic-calendar"target="_blank">Calendar</a></li>
+                            <li><a href="https://www.art.yale.edu/about/people/current-students"target="_blank">Students</a></li>
+                            <li><a href="https://www.art.yale.edu/about/people/faculty-and-staff"target="_blank">Faculty & Staff</a></li>
+                            <li><a href="https://www.art.yale.edu/about/facilities"target="_blank">Facilities</a></li>                       
+                            <li><a href="https://www.art.yale.edu/courses"target="_blank">Courses</a></li>
+                            <li><a href="https://www.art.yale.edu/opportunities"target="_blank">Opportunities</a></li>
+                            <li><a href="https://www.art.yale.edu/resources"target="_blank">Resources</a></li>
+                            <li><a href="https://www.art.yale.edu/"target="_blank">Bulletin Board</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
